@@ -1,7 +1,7 @@
 {
   "name": "ram-webapp",
   "version": "1.0.0",
-  "description": "A Vue.js 2 project to implement "Rapid Assessment for Markets"",
+  "description": "A Vue.js 2 project to implement 'Rapid Assessment for Markets'",
   "author": "Fernando Suárez <fsuarezj@gmail.com>",
   "private": true,
   "scripts": {
