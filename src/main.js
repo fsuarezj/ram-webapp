@@ -5,32 +5,25 @@ import App from './App'
 import router from './router'
 import VueI18n from 'vue-i18n'
 
+Vue.use(VueI18n)
 Vue.config.productionTip = false
 
-var locales = {
-  en: {
-    common: {
+const i18n = new VueI18n({
+  locale: 'es',
+  messages: {
+    en: {
       ramName: 'Rapid Assessment for Markets'
-    }
-  },
-  es: {
-    common: {
+    },
+    es: {
       ramName: 'Evaluación Rápida de Mercados'
     }
   }
-}
-
-Vue.use(VueI18n)
-
-Vue.config.lang = 'es'
-
-Object.keys(locales).forEach(function (lang) {
-  Vue.locale(lang, locales[lang])
 })
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
   router,
   template: '<App/>',
   components: { App }

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>{{ $t("common.ramName") }}</h1>
+    <h1>{{ $t("ramName") }}</h1>
     <h2>The web app</h2>
   </div>
 </template>
