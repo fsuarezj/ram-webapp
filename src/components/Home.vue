@@ -3,6 +3,7 @@
     <b-jumbotron class="home" :header="$t('common.ramName')"
       :lead="$t('common.intro')">
       <lang-changer class="corner-lang-changer"></lang-changer>
+      <p />
       <b-button>{{ $t("common.start") }}</b-button>
     </b-jumbotron>
   </div>
