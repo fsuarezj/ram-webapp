@@ -1,13 +1,21 @@
 <template>
   <div class="home">
-    <h1>{{ $t("ramName") }}</h1>
-    <h2>The web app</h2>
+    <b-jumbotron class="home" :header="$t('common.ramName')"
+      :lead="$t('common.intro')">
+      <lang-changer class="corner-lang-changer"></lang-changer>
+      <b-button>{{ $t("common.start") }}</b-button>
+    </b-jumbotron>
   </div>
 </template>
 
 <script>
+import LangChanger from './LangChanger.vue'
+
 export default {
   name: 'home',
+  components: {
+    'lang-changer': LangChanger
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -20,5 +28,17 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+}
+
+div.home {
+  text-align: center;
+}
+
+.jumbotron.home {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.corner-lang-changer {
 }
 </style>
