@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <b-jumbotron class="home" :header="$t('common.ramName')"
+    <b-jumbotron class="jumbotron-home" :header="$t('common.ramName')"
       :lead="$t('common.intro')">
       <lang-changer class="corner-lang-changer"></lang-changer>
       <p />
-      <b-button>{{ $t("common.start") }}</b-button>
+      <router-link to="/ram" tag="b-button" active-class="active" exact>{{ $t("common.start") }}</router-link>
     </b-jumbotron>
   </div>
 </template>
 
 <script>
-import LangChanger from './LangChanger.vue'
+import LangChanger from './common/LangChanger.vue'
 
 export default {
   name: 'home',
@@ -31,11 +31,14 @@ h1, h2 {
   font-weight: normal;
 }
 
-div.home {
+.home {
   text-align: center;
+  border: #E00 solid 1px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.jumbotron.home {
+.jumbotron.jumbotron-home {
   max-width: 1000px;
   margin: auto;
 }
