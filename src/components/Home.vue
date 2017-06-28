@@ -33,9 +33,14 @@ h1, h2 {
 
 .home {
   text-align: center;
-  border: #E00 solid 1px;
   max-width: 1000px;
   margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    border: #E00 solid 1px;
+  }
 }
 
 .jumbotron.jumbotron-home {

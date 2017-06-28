@@ -4,7 +4,8 @@ export const translations = {
       ramName: 'Rapid Assessment for Markets',
       intro: 'A web app to guide and help RAM practitioners',
       start: 'Start',
-      languaje: 'Languaje'
+      languaje: 'Languaje',
+      step: 'Step'
     }
   },
   es: {
@@ -12,7 +13,8 @@ export const translations = {
       ramName: 'Evaluación Rápida de Mercados',
       intro: 'Una aplicación web para guiar y apoyar en la utilización del RAM',
       start: 'Inicio',
-      languaje: 'Idioma'
+      languaje: 'Idioma',
+      step: 'Paso'
     }
   }
 }
