@@ -28,6 +28,10 @@ export default {
     font-weight: bold;
   }
 
+  .navbar-title {
+    margin: 8px;
+  }
+
   @media screen and (min-width: 768px) {
     .navbar-title {
       width: 500px;

@@ -24,7 +24,7 @@ export default {
     margin: auto;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     .ramContainer {
       border: #E00 solid 1px;
     }

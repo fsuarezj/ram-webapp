@@ -1,9 +1,8 @@
 <template lang="html">
-  <div class="">
-    {{ $t('common.languaje') }}:
-    <b-form-select v-model="locale"
-                  :options="langs">
-    </b-form-select>
+  <div class="lang-changer">
+    <b-nav-item-dropdown :text="$t('common.languaje')" right>
+      <b-dropdown-item v-for="lang in langs" @click="setLocale(lang.value)">{{ lang.text }}</b-dropdown-item>
+    </b-nav-item-dropdown>
   </div>
 </template>
 
@@ -24,18 +23,18 @@ export default {
       languaje: 'es'
     }
   },
-  computed: {
-    locale: {
-      get () {
-        return this.$i18n.locale
-      },
-      set (newLocale) {
-        this.$i18n.locale = newLocale
-      }
+  methods: {
+    setLocale (newLocale) {
+      this.$i18n.locale = newLocale
     }
   }
 }
 </script>
 
 <style lang="css">
+  .lang-changer {
+    float: right;
+    font-size: 12px;
+    list-style-type: none;
+  }
 </style>

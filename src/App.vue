@@ -19,7 +19,7 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   #app {
     margin-top: 60px;
   }

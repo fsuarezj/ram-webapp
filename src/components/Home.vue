@@ -1,8 +1,8 @@
 <template>
   <div class="home">
+    <lang-changer class="home-lang-changer btn btn-secondary"></lang-changer>
     <b-jumbotron class="jumbotron-home" :header="$t('common.ramName')"
       :lead="$t('common.intro')">
-      <lang-changer class="corner-lang-changer"></lang-changer>
       <p />
       <router-link to="/ram" tag="b-button" active-class="active" exact>{{ $t("common.start") }}</router-link>
     </b-jumbotron>
@@ -37,7 +37,14 @@ h1, h2 {
   margin: auto;
 }
 
-@media screen and (min-width: 800px) {
+.home-lang-changer {
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 1000px) {
   .home {
     border: #E00 solid 1px;
   }
@@ -46,8 +53,5 @@ h1, h2 {
 .jumbotron.jumbotron-home {
   max-width: 1000px;
   margin: auto;
-}
-
-.corner-lang-changer {
 }
 </style>
