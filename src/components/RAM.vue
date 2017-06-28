@@ -26,7 +26,7 @@ export default {
 
   @media screen and (min-width: 1000px) {
     .ramContainer {
-      border: #E00 solid 1px;
+      border: #E00 solid 0px;
     }
   }
 </style>

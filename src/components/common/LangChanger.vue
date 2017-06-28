@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="lang-changer">
-    <b-nav-item-dropdown :text="$t('common.languaje')" right>
-      <b-dropdown-item v-for="lang in langs" @click="setLocale(lang.value)">{{ lang.text }}</b-dropdown-item>
+    <b-nav-item-dropdown :text="$t('common.languaje')" right link="false">
+      <b-dropdown-item v-for="lang in langs" @click="setLocale(lang.value)" :key="lang.value">{{ lang.text }}</b-dropdown-item>
     </b-nav-item-dropdown>
   </div>
 </template>

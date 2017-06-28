@@ -5,21 +5,21 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    locale: 'es'
+    currentStep: 3
   },
   getters: {
-    locale: state => {
-      return state.locale
+    currentStep: state => {
+      return state.currentStep
     }
   },
   mutations: {
-    setLocale: (state, newLocale) => {
-      state.locale = newLocale
+    setCurrentStep: (state, currentStep) => {
+      state.currentStep = currentStep
     }
   },
   actions: {
-    setLocale: ({commit}, newLocale) => {
-      commit('setLocale', newLocale)
+    setCurrentStep: ({commit}, currentStep) => {
+      commit('setCurrentStep', currentStep)
     }
   }
 })

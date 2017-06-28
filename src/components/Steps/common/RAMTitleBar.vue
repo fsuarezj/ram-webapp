@@ -26,6 +26,14 @@ export default {
     background-color: #F0F0F0;
     border-top: #CCC solid 3px;
     font-weight: bold;
+    box-shadow: 0px 1px 5px;
+  }
+
+  .ram-title-bar::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   .navbar-title {
