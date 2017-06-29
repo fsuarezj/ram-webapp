@@ -9,7 +9,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-// import { store } from './store/store'
+import { store } from './store/store'
 import { translations } from './assets/translations'
 
 Vue.use(VueI18n)
@@ -25,7 +25,7 @@ new Vue({
     messages: translations
   }),
   router,
-  // store,
+  store,
   template: '<App/>',
   components: { App }
 })

@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="steps-bar">
-    <div v-for="step in steps" class="step-item" :class="step.state">
+    <router-link :to="'/ram/step'+step.number" tag="div" v-for="step in steps" class="step-item" :key="'step'+step.number" :class="step.state" @click="">
       {{  $t('common.step') }} {{ step.number }}
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
       for (var i = 1; i <= 5; i++) {
         steps.push({
           number: i,
-          state: (i <= 3 ? 'enabled' : 'disabled')
+          state: (i <= this.$store.getters.currentStep ? 'enabled' : 'disabled')
         })
       }
       return steps
